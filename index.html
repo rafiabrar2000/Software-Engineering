@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Get Last Element of Array</title>
+</head>
+<body>
+
+  <h2>Last Element Finder</h2>
+  <p>Array: <span id="arrayDisplay"></span></p>
+  <p>Last Element: <span id="lastElement"></span></p>
+
+  <script>
+    // Function to get the last element of an array
+    function getLastElement(arr) {
+      if (arr.length === 0) {
+        return null; // or throw an error if preferred
+      }
+      return arr[arr.length - 1];
+    }
+
+    // Example array
+    const sampleArray = [10, 20, 30, 40, 50];
+
+    // Display the array and last element
+    document.getElementById('arrayDisplay').textContent = JSON.stringify(sampleArray);
+    document.getElementById('lastElement').textContent = getLastElement(sampleArray);
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Join Array Elements</title>
+</head>
+<body>
+
+  <h2>Join Array Elements into a String</h2>
+  <p>Original Array: <span id="arrayDisplay"></span></p>
+  <p>Joined String: <span id="joinedString"></span></p>
+
+  <script>
+    // Sample array
+    const wordsArray = ["Hello", "world", "this", "is", "JavaScript"];
+
+    // Join the array elements into a string
+    const joined = wordsArray.join(" "); // Use space as a separator
+
+    // Display the original array and the joined string
+    document.getElementById('arrayDisplay').textContent = JSON.stringify(wordsArray);
+    document.getElementById('joinedString').textContent = joined;
+  </script>
+
+</body>
+</html>
